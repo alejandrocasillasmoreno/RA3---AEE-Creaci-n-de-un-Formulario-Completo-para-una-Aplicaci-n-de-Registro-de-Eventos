@@ -55,12 +55,3 @@ Esta actividad consiste en crear un formulario web completo para el registro de 
 ### 6. Adjuntar Archivo
 - Subir archivo (opcional)
 
-## Instalación y Uso
-
-1. Colocar los archivos en la carpeta `htdocs` de XAMPP
-2. Iniciar Apache desde el panel de control de XAMPP
-3. Acceder al formulario mediante: `http://localhost/tu_carpeta/formulario.html`
-
-## Autor
-
-Desarrollado como parte de la actividad RA3 del módulo DWEC.
