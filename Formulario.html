@@ -2,19 +2,24 @@
 <html>
 
 <head>
+    <!-- Configuración básica del documento -->
+    <title>Formulario de Registro de Eventos</title>
     <meta charset="UTF-8">
     <meta name="Descripcion" content="Pagina de descripción personal">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <!-- Enlace a Bootstrap CSS para estilos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Contenedor principal -->
     <div class="container mt-4">
         <main>
             <header>
                 <h1>Campos del Formulario</h1>
             </header>
-        
+
+            <!-- SECCIÓN 1: Información Personal -->
             <h2>1. Informaci&oacute;n personal:</h2>
             <form method="post" action="procesar_evento.php" enctype="multipart/form-data">
                 <ul class="row list-unstyled">
@@ -28,7 +33,7 @@
                     </li>
                     <li class="col-md-6 mb-3">
                         <label for="telefono" class="form-label">N&uacute;mero de tel&eacute;fono:</label>
-                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" placeholder="Tu número de telefono"  class="form-control">
+                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" placeholder="Tu número de telefono"  class="form-control">
                     </li>
                     <li class="col-md-6 mb-3">
                         <label for="fecha_nacimiento" class="form-label">Fecha de nacimiento:</label>
@@ -47,11 +52,12 @@
                     </li>
                 </ul>
 
+                <!-- SECCIÓN 2: Información del Evento -->
                 <h2>2. Informaci&oacute;n del Evento:</h2>
                 <ul class="row list-unstyled">
                     <li class="col-md-6 mb-3">
-                        <label for="Fecha_Evento" class="form-label">Fecha del Evento:</label>
-                        <input type="date" id="Fecha_Evento" name="Fecha_Evento" placeholder="Escribe la fecha del evento" class="form-control">
+                        <label for="fecha_evento" class="form-label">Fecha del Evento:</label>
+                        <input type="date" id="fecha_evento" name="fecha_evento" placeholder="Escribe la fecha del evento" class="form-control">
                     </li>
                     <li class="col-md-6 mb-3">
                         <label for="tipo_entrada" class="form-label">Tipo de entrada:</label>
@@ -82,6 +88,7 @@
                     </li>
                 </ul>
 
+                <!-- SECCIÓN 3: Información de Acceso -->
                 <h2>3. Informaci&oacute;n de Acceso:</h2>
                 <ul class="row list-unstyled">
                     <li class="col-md-6 mb-3">
@@ -98,6 +105,7 @@
                     </li>
                 </ul>
 
+                <!-- SECCIÓN 4: Preferencias de Contacto -->
                 <h2>4. Preferencias de contacto:</h2>
                 <ul class="row list-unstyled">
                     <li class="col-12 mb-3">
@@ -114,6 +122,7 @@
                     </li>
                 </ul>
 
+                <!-- SECCIÓN 5: Encuesta Adicional -->
                 <h2>5. Encuesta Adicional:</h2>
                 <ul class="row list-unstyled">
                     <li class="col-md-6 mb-3">
@@ -126,6 +135,7 @@
                     </li>
                 </ul>
 
+                <!-- SECCIÓN 6: Adjuntar un archivo -->
                 <h2>6. Adjuntar un archivo:</h2>
                 <ul class="row list-unstyled">
                     <li class="col-md-6 mb-3">
@@ -142,4 +152,4 @@
         </main>
     </div>
 </body>
-</html>
+</html>>
